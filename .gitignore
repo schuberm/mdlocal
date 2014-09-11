@@ -1,0 +1,6 @@
+*.py*
+*.out
+*.bin
+*.txt
+*.vel
+*.cpp
