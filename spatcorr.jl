@@ -4,7 +4,7 @@
 require("bin2tex.jl")
 require("velij.jl")
 
-filename="dump_1_1.bin"
+velfile="vel_1_1.bin"
 numTstep=8192
 #numTstep=1000
 numAtoms=4096
@@ -21,7 +21,7 @@ x=linspace(0,1,numTstep)
 for na=1:10
 streampos=0
 for i=1:numTstep
-	(vel,streampos)=readLammps(filename,numAtoms,streampos)
+	(vel,streampos)=readLammps(velfile,numAtoms,streampos)
 	#tmp=init*vel[2,:]'
 	# push!(veli,vel[1,1])
 	# push!(velj,vel[2,1])
