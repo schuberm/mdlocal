@@ -38,13 +38,3 @@ function readLammps(filename,numAtoms,streampos)
 	return vel,streampos
 
 end
-
-filename="dump_1_1.bin"
-numTstep=0
-numAtoms=4096
-(vel,streampos)=readLammps(filename,numAtoms,numTstep)
-show(streampos)
-show(vel[1,:])
-(vel,streampos)=readLammps(filename,numAtoms,streampos)
-show(streampos)
-show(vel[1,:])
